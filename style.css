@@ -1,0 +1,211 @@
+/* var() de paleta */
+:root {
+  --color-primario: #e6eaec;
+  --color-secundario: #6F9BE6;
+}
+
+/* Estilos para resetear los márgenes y el relleno de todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  min-height: 100vh; /* Altura mínima del cuerpo igual al 100% de la altura de la ventana gráfica */
+  background-color: var(--color-primario);
+  background-size: cover; /* Ajuste del tamaño del fondo para cubrir completamente el área */
+  background-repeat: no-repeat; /* No repetir el fondo */
+  background-position: center; /* Posicionamiento del fondo en el centro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia de fuentes para el texto */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: var(--color-secundario); /* Color de fondo de la barra de navegación */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Asegura que el menú de navegación esté por encima de otros elementos */
+  
+}
+
+nav ul {
+  width: 100%; /* Ancho completo */
+  list-style: none; /* Sin viñetas en la lista */
+  display: flex; /* Mostrar elementos como una fila flexible */
+  justify-content: flex-end; /* Alinear los elementos a la derecha */
+  align-items: center; /* Alinear verticalmente los elementos al centro */
+}
+
+nav li {
+  height: 50px; /* Altura de los elementos de la lista */
+}
+
+nav a {
+  height: 100%; /* Altura completa del enlace */
+  padding: 0 30px; /* Relleno del enlace */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  display: flex; /* Mostrar elementos como una fila flexible */
+  align-items: center; /* Alinear verticalmente los elementos al centro */
+  color: black; /* Color del texto */
+}
+
+nav a:hover {
+  background-color: mediumaquamarine; /* Color de fondo al pasar el ratón por encima */
+}
+
+nav li:first-child {
+  margin-right: auto; /* Mover el primer elemento a la izquierda */
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  position: fixed; /* Posición fija */
+  top: 0; /* Desde la parte superior */
+  right: 0; /* Hacia la derecha */
+  height: 100vh; /* Altura completa */
+  width: 250px; /* Ancho fijo */
+  background-color: rgba(255, 255, 255, 0.15); /* Color de fondo semitransparente */
+  backdrop-filter: blur(12px); /* Desenfoque del fondo */
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  list-style: none; /* Sin viñetas en la lista */
+  display: none; /* Ocultar la barra lateral por defecto */
+  flex-direction: column; /* Mostrar elementos en columna */
+  align-items: flex-start; /* Alinear elementos a la izquierda */
+  justify-content: flex-start; /* Justificar elementos desde arriba */
+}
+
+.sidebar li {
+  width: 100%; /* Ancho completo */
+}
+
+.sidebar a {
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el botón de menú */
+.menu-button {
+  display: none; /* Ocultar el botón de menú por defecto */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none; /* Ocultar elementos con clase 'hideOnMobile' en dispositivos móviles */
+  }
+  .menu-button {
+    display: block; /* Mostrar el botón de menú en dispositivos móviles */
+  }
+}
+
+/* Media query para dispositivos móviles con pantalla pequeña */
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%; /* Ancho completo de la barra lateral en dispositivos móviles con pantalla pequeña */
+  }
+}
+
+
+/* seccion de interes */
+
+.interest-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.interest-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.interest-item a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.interest-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.interest-item img:hover {
+  transform: scale(1.1);
+}
+
+.interest-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* SECCION PIE DE PAGINA */
+
+.footer {
+  background-color: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*  SECCION FOTO Y DESCRIPCION */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+.col-md-4 {
+  margin-right: 20px;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.hero {
+  position: relative;
+  height: 50vh; /* Ajusta el tamaño del contenedor "hero" */
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video al contenedor sin deformarlo */
+}
