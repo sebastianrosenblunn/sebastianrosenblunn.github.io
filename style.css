@@ -222,3 +222,64 @@ nav li:first-child {
   font-size: 3rem;
   color: var(--color-primario);
 }
+
+
+.proyectos {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.proyectos h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
+
+.galeria-texto {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.galeria-texto h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
+
+
+
+.literatura-texto {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.literatura-texto h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
+
+
+
+.musica-texto {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.musica-texto h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
+
+
+.programacion-texto {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.programacion-texto h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
