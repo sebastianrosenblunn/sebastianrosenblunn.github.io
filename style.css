@@ -209,3 +209,16 @@ nav li:first-child {
   height: 100%;
   object-fit: cover; /* Ajusta el video al contenedor sin deformarlo */
 }
+
+/* TITULOS Y TEXTO */
+
+.about-section {
+  padding: 0.7rem 0;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  color: var(--color-primario);
+}
