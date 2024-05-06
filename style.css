@@ -66,7 +66,7 @@ nav li:first-child {
   right: 0; /* Hacia la derecha */
   height: 100vh; /* Altura completa */
   width: 250px; /* Ancho fijo */
-  background-color: rgba(255, 255, 255, 0.15); /* Color de fondo semitransparente */
+  background-color:var(--color-secundario); /* Color de fondo semitransparente */
   backdrop-filter: blur(12px); /* Desenfoque del fondo */
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
   list-style: none; /* Sin viñetas en la lista */
@@ -107,7 +107,7 @@ nav li:first-child {
 }
 
 
-/* seccion de interes */
+/* CARTAS */
 
 .interest-section {
   display: grid;
@@ -162,9 +162,9 @@ nav li:first-child {
   width: 100%;
 }
 
-/*  SECCION FOTO Y DESCRIPCION */
+/* CONTAINER SOBRE MI */
 
-.container {
+.container-sobremi {
   max-width: 1100px;
   margin: 0 auto;
   padding: 50px 0;
@@ -184,7 +184,7 @@ nav li:first-child {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
-  .container {
+  .container-sobremi {
     grid-template-columns: 1fr;
   }
 
@@ -193,7 +193,7 @@ nav li:first-child {
   }
 }
 
-
+/*  HEROES */
 
 .hero {
   position: relative;
