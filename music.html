@@ -8,46 +8,49 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
   <nav> <!-- Inicio de la sección de navegación -->
-    <ul class="sidebar"> <!-- Lista no ordenada para el menú lateral -->
+
+    <ul class="sidebar"> 
       <!-- Elemento de la lista con función JavaScript al hacer clic -->
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
-      
+      <li><a href="index.html">Inicio</a></li> 
+      <li><a href="gallery.html">Galería</a></li> 
+      <li><a href="music.html">Música</a></li> 
+      <li><a href="literature.html">Literatura</a></li> 
+      <li><a href="programming.html">Programación</a></li>
     </ul>
+
     <ul> <!-- Lista no ordenada para el menú horizontal -->
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="#">SEBASTIAN ROSENBLUNN</a></li>
+      <li><a href="#">SEBASTIAN ROSENBLUNN HELMAN</a></li>
       <!-- Elementos de la lista con enlaces ocultos en dispositivos móviles -->
-      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li class="hideOnMobile"><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li class="hideOnMobile"><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
+      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> 
+      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> 
+      <li class="hideOnMobile"><a href="music.html">Música</a></li> 
+      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li>
+      <li class="hideOnMobile"><a href="programming.html">Programación</a></li>
+      
       <!-- Botón de menú para mostrar la barra lateral en dispositivos móviles -->
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
 
 
-   <!-- HEROE -->
   <section class="hero">
-    <video autoplay muted loop id="myVideo">
-      <source src="media/music-video.mp4" type="video/mp4">
-    </video>
+    <img src="media/musica-image.jpg" alt="Imagen del mar" id="myImage">
   </section>
+  
+  
 
-  <!-- Nueva sección para el título "Un poco sobre mi" -->
-  <section class="musica-texto">
-    <h2>Música</h2>
-  </section>
+    <!-- Nueva sección para el título "Un poco sobre mi" -->
+    <section class="about-section">
+      <h2>grabaciones</h2>
+    </section>
+
+
+  
 
   <footer class="footer">
     <p>&copy; Todos los derechos reservados S.R.H.</p>

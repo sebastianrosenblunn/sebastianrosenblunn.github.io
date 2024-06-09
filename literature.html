@@ -8,54 +8,96 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <nav> <!-- Inicio de la sección de navegación -->
-    <ul class="sidebar"> <!-- Lista no ordenada para el menú lateral -->
-      <!-- Elemento de la lista con función JavaScript al hacer clic -->
-      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-      <!-- Elementos de la lista con enlaces -->
-      <li><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
 
+  <nav> <!-- Inicio de la sección de navegación -->
+    <ul class="sidebar"> 
+      <!-- Elemento de la lista con función JavaScript al hacer clic -->
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <!-- Elementos de la lista con enlaces -->
+      <li><a href="index.html">Inicio</a></li> 
+      <li><a href="gallery.html">Galería</a></li> 
+      <li><a href="music.html">Música</a></li> 
+      <li><a href="literature.html">Literatura</a></li> 
+      <li><a href="programming.html">Programación</a></li>
     </ul>
+
     <ul> <!-- Lista no ordenada para el menú horizontal -->
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="#">SEBASTIAN ROSENBLUNN</a></li>
+      <li><a href="#">SEBASTIAN ROSENBLUNN HELMAN</a></li>
       <!-- Elementos de la lista con enlaces ocultos en dispositivos móviles -->
-      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li class="hideOnMobile"><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li class="hideOnMobile"><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
+      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> 
+      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> 
+      <li class="hideOnMobile"><a href="music.html">Música</a></li> 
+      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li>
+      <li class="hideOnMobile"><a href="programming.html">Programación</a></li>
+      
       <!-- Botón de menú para mostrar la barra lateral en dispositivos móviles -->
-      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
 
-
-   <!-- HEROE -->
   <section class="hero">
-    <video autoplay muted loop id="myVideo">
-      <source src="media/write-video.mp4" type="video/mp4">
-    </video>
-  </section>
-
-   <!-- Nueva sección para el título "Un poco sobre mi" -->
-  <section class="literatura-texto">
-    <h2>Literatura</h2>
+    <img src="media/literatura-image.jpg" alt="Imagen del mar" id="myImage">
   </section>
   
+      <!-- Nueva sección para el título "Un poco sobre mi" -->
+      <section class="about-section">
+        <h2>Textos</h2>
+      </section>
+
+
+  <!-- Nueva sección para los libros -->
+  <section class="books-section">
+    <h2>Libros</h2>
+    <div class="books-container">
+      <!-- Reemplaza las siguientes entradas con los detalles de tus libros -->
+      <div class="book">
+        <img src="media/book1.jpg" alt="Portada del libro 1">
+        <div class="book-description">
+          <h3>Las Islas de vapor</h3>
+          <p>Mi primer trabajo, cumulo de generos literarios bajo el hilo conductor de un extraño nihilismo que no trata de resolver nada y oscila entre el pesimismo y el optimismo. Cada personalidad queda resguardad por un color</p>
+        </div>
+      </div>
+      <div class="book">
+        <img src="media/book2.jpg" alt="Portada del libro 2">
+        <div class="book-description">
+          <h3>Poemas Conjuntos I</h3>
+          <p>(Proximamente)</p>
+          <p>Coleccion de poemas escritos de forma conjunta que no implica nada mas ni nada menos que llevar mi labor literario conmigo y con el otro.</p>
+
+        </div>
+      </div>
+      <div class="book">
+        <img src="media/book2.jpg" alt="Portada del libro 2">
+        <div class="book-description">
+          <h3>Ruido Desnudo</h3>
+          <p>(Proximamente)</p>
+          <p>Quiza una autoficcion que divaga sobre la identidad, la informacion y otros fantasmasgoricos asuntos</p>
+        </div>
+      </div>
+      <div class="book">
+        <img src="media/book2.jpg" alt="Portada del libro 2">
+        <div class="book-description">
+          <h3>El nuevo viejo mundo</h3>
+          <p>(Proximamente)</p>
+          <p>Proyecto de burla, proyecto de satira que me tome demaciado en serio. Cito aqui el subtitulo del libro que lo dice todo sin decirlo nada: Ficcion filosofica sobre una filosofia ficcional.</p>
+        </div>
+      </div>
+      <div class="book">
+        <img src="media/book2.jpg" alt="Portada del libro 2">
+        <div class="book-description">
+          <h3>Poesia Experimental</h3>
+          <p>(Proximamente)</p>
+          <p>Un intento de estableces nuevos modos de vivir la palabra, nuevos formatos para descubrir las reglas, los juegos, los silencios, los ritmos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <p>&copy; Todos los derechos reservados S.R.H.</p>
   </footer>
   
-
   <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript externo -->
 </body>
 </html>
-
-

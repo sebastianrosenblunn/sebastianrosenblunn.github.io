@@ -8,76 +8,83 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
   <nav> <!-- Inicio de la sección de navegación -->
-    <ul class="sidebar"> <!-- Lista no ordenada para el menú lateral -->
+
+    <ul class="sidebar"> 
       <!-- Elemento de la lista con función JavaScript al hacer clic -->
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
+      <li><a href="index.html">Inicio</a></li> 
+      <li><a href="gallery.html">Galería</a></li> 
+      <li><a href="music.html">Música</a></li> 
+      <li><a href="literature.html">Literatura</a></li> 
+      <li><a href="programming.html">Programación</a></li>
     </ul>
+
     <ul> <!-- Lista no ordenada para el menú horizontal -->
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="#">SEBASTIAN ROSENBLUNN</a></li>
+      <li><a href="#">SEBASTIAN ROSENBLUNN HELMAN</a></li>
       <!-- Elementos de la lista con enlaces ocultos en dispositivos móviles -->
-      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li class="hideOnMobile"><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li class="hideOnMobile"><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
+      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> 
+      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> 
+      <li class="hideOnMobile"><a href="music.html">Música</a></li> 
+      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li>
+      <li class="hideOnMobile"><a href="programming.html">Programación</a></li>
+      
       <!-- Botón de menú para mostrar la barra lateral en dispositivos móviles -->
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
 
-<!-- HERO GALLERY -->
-<section class="hero">
-  <video autoplay muted loop id="myVideo">
-    <source src="media/paint-video.mp4" type="video/mp4">
-  </video>
-</section>
 
-<!-- Nueva sección para el título "Un poco sobre mi" -->
-<section class="galeria-texto">
-  <h2>Galería</h2>
-</section>
-
-
-    <!-- Nueva sección para los rectángulos con imágenes y textito-->
-    <section class="interest-section"> 
-      <div class="interest-item">
-        <a href="gallery.html">
-          <img src="media/galeria.jpeg" alt="Dibujos"> 
-          <p>Dibujos</p>
-        </a>
-      </div>
-      <div class="interest-item">
-        <a href="music.html">
-          <img src="media/musica.jpeg" alt="Pintura"> 
-          <p>Pinturas</p>
-        </a>
-      </div>
-      <div class="interest-item">
-        <a href="literature.html">
-          <img src="media/literatura.jpeg" alt="Mixto"> 
-          <p>Mixto</p>
-        </a>
-      </div>
-    </section>
+  <section class="hero">
+    <img src="media/gallery-image.jpg" alt="Imagen del mar" id="myImage">
+  </section>
   
+      <!-- Nueva sección para el título "Un poco sobre mi" -->
+      <section class="about-section">
+        <h2>Obras</h2>
+      </section>
+
+  <!-- Nueva sección de galería de imágenes -->
+  <section class="gallery">
+    <div class="gallery-container">
+  
+      <div class="gallery-item">
+        <img src="art-gallery/image1.jpg" alt="Imagen 1">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image2.jpg" alt="Imagen 2">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image3.jpg" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image4.jpg" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image5.jpg" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image6.jpg" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image7.jpg" alt="Imagen 3">
+      </div>
+      <div class="gallery-item">
+        <img src="art-gallery/image8.jpg" alt="Imagen 3">
+      </div>
+      <!-- Agrega más elementos de galería según sea necesario -->
+    </div>
+  </section>
+ 
 
   <footer class="footer">
     <p>&copy; Todos los derechos reservados S.R.H.</p>
   </footer>
   
 
-  <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript externo -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-

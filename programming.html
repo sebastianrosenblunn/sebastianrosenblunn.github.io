@@ -8,74 +8,121 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
   <nav> <!-- Inicio de la sección de navegación -->
-    <ul class="sidebar"> <!-- Lista no ordenada para el menú lateral -->
+
+    <ul class="sidebar"> 
       <!-- Elemento de la lista con función JavaScript al hacer clic -->
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
-      
+      <li><a href="index.html">Inicio</a></li> 
+      <li><a href="gallery.html">Galería</a></li> 
+      <li><a href="music.html">Música</a></li> 
+      <li><a href="literature.html">Literatura</a></li> 
+      <li><a href="programming.html">Programación</a></li>
     </ul>
+
     <ul> <!-- Lista no ordenada para el menú horizontal -->
       <!-- Elementos de la lista con enlaces -->
-      <li><a href="#">SEBASTIAN ROSENBLUNN</a></li>
+      <li><a href="#">SEBASTIAN ROSENBLUNN HELMAN</a></li>
       <!-- Elementos de la lista con enlaces ocultos en dispositivos móviles -->
-      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> <!-- Redirige a inicio.html -->
-      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> <!-- Redirige a galeria.html -->
-      <li class="hideOnMobile"><a href="music.html">Música</a></li> <!-- Redirige a musica.html -->
-      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li> <!-- Redirige a literatura.html -->
-      <li class="hideOnMobile"><a href="programming.html">Programación</a></li> <!-- Redirige a programacion.html -->
-
+      <li class="hideOnMobile"><a href="index.html">Inicio</a></li> 
+      <li class="hideOnMobile"><a href="gallery.html">Galería</a></li> 
+      <li class="hideOnMobile"><a href="music.html">Música</a></li> 
+      <li class="hideOnMobile"><a href="literature.html">Literatura</a></li>
+      <li class="hideOnMobile"><a href="programming.html">Programación</a></li>
+      
       <!-- Botón de menú para mostrar la barra lateral en dispositivos móviles -->
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
 
 
-   <!-- HEROE -->
   <section class="hero">
-    <video autoplay muted loop id="myVideo">
-      <source src="media/code-video.mp4" type="video/mp4">
-    </video>
+    <img src="media/code-image.jpg" alt="Imagen del mar" id="myImage">
   </section>
 
-  <!-- Nueva sección para el título "Un poco sobre mi" -->
-  <section class="programacion-texto">
-    <h2>Programación</h2>
-  </section>
+<!-- Nueva sección para el título "Un poco sobre mi" -->
+<section class="about-section">
+<h2>Hambito Profesional</h2>
+</section>
 
-  <!-- PAGINA EN CONSTRUCCION -->
+  <section class="programacion">
+    <div class="about-me">
+      <h3>Habilidades y Experiencia</h3>
+      <p>Como Analista de Datos Avanzado Junior, tengo experiencia en la extracción, transformación y carga de datos (ETL) utilizando Python/R y bibliotecas de manipulación de datos. También tengo habilidades en realizar análisis exploratorio de datos (EDA) y generar conocimientos relevantes a través de gráficos y análisis estadísticos, así como en la creación de paneles en PowerBI/Tableau/Looker. Tengo considerable experiencia en la creación y manipulación de bases de datos relacionales con SQL. Además, puedo implementar modelos de Machine Learning relativamente simples y desplegarlos a través de servicios como FastAPI y Streamlit. 🚀📈 También tengo experiencia en servicios de Google Cloud Platform como Cloud Storage, Cloud Functions, BigQuery, AppEngine, entre otros.</p>
+      <h3>Educación y Desarrollo Personal</h3>
+      <p>Soy estudiante avanzado de la carrera de Psicologia por la UBA y Lic. en ciencias de datos por la UNSAM. Esta aparantemente extraña convinacion permite puntos de encuentro entre la psicometria/sociometria, metodologias de investigacion, comprencion del comportamiento, estadistica y probabilidad, matematicas y programacion.</p>
 
-  <style>
-    section {
-      background-color: #f5f5f5;
-      padding: 100px;
-      text-align: center;
-    }
-  
-    h1 {
-      font-size: 36px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-  
-    p {
-      font-size: 18px;
-      color: #666;
-    }
-  </style>
-  
-  <section>
-    <h1>Página en construcción</h1>
-    <p>Estoy trabajando duro para tener esta página lista lo antes posible. ¡Gracias por tu paciencia y comprensión!</p>
+      <h3>Compromiso y Metas</h3>
+      <p>Estoy comprometido con el aprendizaje continuo y siempre estoy abierto a nuevas oportunidades que me permitan crecer tanto profesional como personalmente en este campo emocionante. ¡Me encantan los desafíos! 💪🔥</p>
+      <h3>Contáctame</h3>
+      <p>Si buscas un Analista/Científico de Datos para colaborar en proyectos relacionados, ¡no dudes en contactarme a través de mi correo <a href="mailto:rosenblunn@proton.me">rosenblunn@proton.me</a>! 📩</p>
+    </div>
+    <div class="portfolio-link">
+      <a href="https://rosenblunn.github.io/" target="_blank" class="portfolio-button">Visita mi portafolio</a>
+    </div>
   </section>
   
   
+
+<style>
+ 
+ .programacion {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolio-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio-button {
+  display: inline-block;
+  background-color: #007BFF; /* Color del botón */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+.about-me {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-me h2 {
+  font-size: 28px;
+  color: #007BFF; /* Cambia el color según el esquema de tu web */
+}
+
+.about-me h3 {
+  font-size: 22px;
+  color: #007BFF; /* Cambia el color según el esquema de tu web */
+  margin-top: 20px;
+}
+
+.about-me p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+</style>
+  
+
+
   <footer class="footer">
     <p>&copy; Todos los derechos reservados S.R.H.</p>
   </footer>
